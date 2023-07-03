@@ -1,0 +1,4 @@
+MATCH(i:Institution)<-[:PART_OF]-(l:Location)<-[:PROVIDED_BY]-(c:Course)<-[:STUDIES]-(s:Student)
+WHERE i.name="Atlantic Technological University"
+RETURN  Distinct(l.location) as Location ,count(Distinct c.name) as Courses_with_Students
+ORDER BY Courses_with_Students, l.location

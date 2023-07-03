@@ -1,0 +1,22 @@
+References:
+
+- “Read a Range of Data - LIMIT and OFFSET - SQLModel.” Sqlmodel.tiangolo.com, 
+sqlmodel.tiangolo.com/tutorial/limit-and-offset/. Accessed 12 Apr. 2023.
+- “Python String Isdigit() Method.” Www.w3schools.com, 
+ww.w3schools.com/python/ref_string_isdigit.asp. Accessed 12 Apr. 2023.
+- “Python String Upper() Method.” Www.w3schools.com, 
+www.w3schools.com/python/ref_string_upper.asp. Accessed 14 Apr. 2023.
+- “Sql - Find Closest Numeric Value in Database.” Stack Overflow, 26 Feb. 2009, stackoverflow.com/
+questions/592209/find-closest-numeric-value-in-database. Accessed 17 Apr. 2023.
+- “8. Errors and Exceptions — Python 3.8.1 Documentation.” Python.org, 27 Apr. 2020, 
+docs.python.org/3/tutorial/errors.html. Accessed 20 Apr. 2023.
+- “OS Module in Python with Examples.” GeeksforGeeks, 21 Nov. 2016, 
+www.geeksforgeeks.org/os-module-python-examples/. Accessed 20 Apr. 2023.
+- “How Does Raw_input().Strip().Split() in Python Work in This Code?” Stack Overflow, 23 July 2017, stackoverflow.com/questions/40598078/
+how-does-raw-input-strip-split-in-python-work-in-this-code. Accessed 21 Apr. 2023.
+“API Documentation — Neo4j Python Driver 5.7.” Neo4j.com, neo4j.com/docs/api/
+python-driver/current/api.html#neo4j.Session.run. Accessed 25 Apr. 2023.
+- “Apoc.label.exists - APOC Documentation.” Neo4j Graph Data Platform, neo4j.com/docs/apoc/
+current/overview/apoc.label/apoc.label.exists/. Accessed 2 May 2023.
+ - “API Documentation — Neo4j Python Driver 5.8.” Neo4j.com, neo4j.com/docs/api/python-driver/
+current/api.html#neo4j.Session.write_transaction. Accessed 2 May 2023.

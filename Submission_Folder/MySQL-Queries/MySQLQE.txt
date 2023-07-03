@@ -1,0 +1,6 @@
+SELECT emp.emp_no, emp.first_name, emp.last_name, FORMAT(sal.salary,2) AS "salary", 
+ROUND(DATEDIFF(sal.to_date, sal.from_date) / 30.44, 0) AS "Months on Salary"
+FROM employees emp
+INNER JOIN salaries sal ON emp.emp_no = sal.emp_no
+WHERE sal.to_date NOT LIKE(SELECT MAX(to_date) FROM salaries)
+ORDER BY emp.emp_no, sal.salary;

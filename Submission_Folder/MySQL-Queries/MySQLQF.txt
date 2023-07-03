@@ -1,0 +1,6 @@
+SELECT YEAR(DATE_ADD(hire_date, INTERVAL 5 MONTH)) AS YYYY,
+DATE_FORMAT(DATE_ADD(hire_date, INTERVAL 5 MONTH), '%m') AS MM,
+COUNT(emp.emp_no) AS 'Employees hired'
+FROM employees emp
+GROUP BY YYYY, MM
+ORDER BY YYYY, MM, 'Employees hired';

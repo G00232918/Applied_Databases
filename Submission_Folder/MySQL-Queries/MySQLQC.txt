@@ -1,0 +1,8 @@
+select distinct emp.emp_no, sal.salary, tt.title
+from employees emp
+inner join titles tt
+on emp.emp_no = tt.emp_no
+inner join salaries sal
+on emp.emp_no = sal.emp_no
+where sal.to_date = '9999-01-01' and tt.to_date = '9999-01-01'
+order by emp.emp_no;

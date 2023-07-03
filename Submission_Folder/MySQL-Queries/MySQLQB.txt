@@ -1,0 +1,9 @@
+SELECT tt.title
+FROM titles tt
+JOIN employees empl ON tt.emp_no = empl.emp_no
+JOIN salaries sal ON empl.emp_no = sal.emp_no
+GROUP BY tt.title
+HAVING MAX(sal.salary) = (SELECT MAX(salary) FROM salaries)
+ORDER BY tt.title ASC;
+
+

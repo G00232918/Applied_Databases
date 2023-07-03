@@ -1,0 +1,4 @@
+MATCH (l:Location)<-[:PROVIDED_BY]-(c:Course)<-[:STUDIES]-(s:Student)
+WHERE l.location="Galway"
+RETURN Distinct c.name as Name, c.cao as CAO, round(sum(s.gpa),1) As Total_GPA
+ORDER BY CAO

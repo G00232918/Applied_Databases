@@ -1,0 +1,3 @@
+MATCH(l:Location)<-[:PROVIDED_BY]-(c:Course)<-[:STUDIES]-(s:Student)
+WHERE l.location="Galway"
+RETURN AVG (s.gpa) As GalwayGPA

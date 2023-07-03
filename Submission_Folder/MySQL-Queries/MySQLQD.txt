@@ -1,0 +1,5 @@
+SELECT emp.emp_no, emp.first_name, emp.last_name, sal.salary
+FROM employees emp
+INNER JOIN salaries sal ON emp.emp_no = sal.emp_no
+WHERE sal.salary > (SELECT AVG(salary) FROM salaries WHERE salary IS NOT NULL)
+ORDER BY emp.emp_no, sal.salary;

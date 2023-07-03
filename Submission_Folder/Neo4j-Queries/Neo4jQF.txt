@@ -1,0 +1,11 @@
+MATCH(i:Institution)<-[:PART_OF]-(l:Location)<-[:PROVIDED_BY]-(c:Course)<-[:STUDIES]-(s:Student)
+WHERE i.name="Atlantic Technological University"
+WITH l, c, count(Distinct s) AS num_students
+RETURN l.location as Location, c.name AS Course,
+    CASE
+        when num_students <4 then "Tiny"
+        when num_students =4 then "small"
+        when num_students =5 then "big"
+        else "large"
+end as Class_Size
+Order by Location ASC, Course ASC
